@@ -61,7 +61,7 @@ End Class
   
  Notice that you must prefix an ordinal with the pound sign (#).  
   
- The following example demonstrates how to replace **MessageBoxA** with **MsgBox** in your code by using the **EntryPoint** field.  
+ The following examples demonstrate how to replace **MessageBoxA** with **MsgBox** in your code by using the **EntryPoint** field.  
   
 ```csharp
 using System;
@@ -70,7 +70,7 @@ using System.Runtime.InteropServices;
 internal static class NativeMethods
 {
     [DllImport("user32.dll", EntryPoint = "MessageBoxA")]
-    internal static extern int MessageBox(
+    internal static extern int MsgBox(
         IntPtr hWnd, string lpText, string lpCaption, uint uType);
 }
 ```
